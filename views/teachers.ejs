@@ -7,7 +7,7 @@
   <!-- Link to the correct css file -->
   <link rel="stylesheet" href="teachers.css" />
   <!-- Link to the correct js file -->
-  <script src="teacherScript.js" defer></script>
+  <script src="/teacherScript.js" defer></script>
 </head>
 <body>
   <nav class="navbar">
@@ -16,9 +16,9 @@
     </div>
     <div class="nav-links">
       <!-- Link to the route for home -->
-      <a href="ratingScript.js">Teachers</a>
+      <a href="/">Teachers</a>
       <!-- Link to the route for ratings and comments -->
-      <a href="ratings.ejs">Comments & Ratings</a>
+      <a href="/ratings">Comments & Ratings</a>
     </div>
   </nav>
 
@@ -28,10 +28,17 @@
     <div class="form-section">
       <h2>Add a New Teacher</h2>
       <!-- Create a form below that matches the Teacher schema -->
-      <form>
-        <label for = "name"> First name:</label>
-    </form>
+      <label>name: </label>
+      <input type="text" name="name" required />
 
+      <label>department: </label>
+      <input type="text" name="department" />
+
+      <label>image: </label>
+      <input type="text" name="image" />
+
+<button type="submit">Submit</button>
+     
 
       
     </div>
